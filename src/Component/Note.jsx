@@ -19,7 +19,7 @@ function Note(props) {
       <input
         type="text"
         
-        placeholder="Add a title"
+        placeholder="Add a title "
         className="input outline-none"
         onChange={(e) => setTitle(e.target.value)}
       />
