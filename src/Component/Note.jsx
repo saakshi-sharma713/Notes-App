@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Note(props) {
   const [title, setTitle] = useState("");
   const { DeleteNote } = useContext(NotesContext);
-console.log(props);
+
   function RemoveNote() {
     if (props.id) {
       DeleteNote(props.id);
@@ -24,7 +24,7 @@ console.log(props);
         onChange={(e) => setTitle(e.target.value)}
       />
       <p style={styles.content}>{props.content}</p>
-      <button style={styles.deleteButton} onClick={()=>{RemoveNote}}>
+      <button style={styles.deleteButton} onClick={()=> RemoveNote()}>
         Delete Note
       </button>
       <button style={styles.edit}>
