@@ -6,7 +6,7 @@ export const NotesContext = createContext(null);
 function Notes({children}) {
   const initialNotes = [
     {
-      title: "Title",
+      title: "Add a Title",
       content: "msg",
       id: Date.now(),
     },
@@ -21,9 +21,9 @@ function Notes({children}) {
     setNotes((prev) => [...prev, {...newNote}]);
   }
 
-  function UpdateNote(id, note) {
+  function UpdateNote(id, note,head) {
     setNotes((prev)=>
-      prev.map((val) => val.id === id ? {...val,content:note}: val ))
+      prev.map((val) => val.id === id ? {...val,title:head,content:note}: val ))
     
   }
 

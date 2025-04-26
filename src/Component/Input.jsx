@@ -6,7 +6,7 @@ function input(){
     const {addNote} = useContext(NotesContext);
     function addTask(e){
         e.preventDefault();
-        addNote({title:"title",content:note,id:Date.now()});
+        addNote({title:"Add a title",content:note,id:Date.now()});
         setnote(" ");
     }
 

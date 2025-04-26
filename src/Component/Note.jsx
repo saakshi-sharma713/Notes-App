@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { NotesContext } from "../Context/Notes";
 import { Link } from "react-router-dom";
-
+import Pages from "./Pages"
 function Note(props) {
   const [title, setTitle] = useState("");
   const { DeleteNote } = useContext(NotesContext);
@@ -13,15 +13,17 @@ function Note(props) {
       console.error("Invalid note ID");
     }
   }
+  
 
   return (
     <div style={styles.note}>
       <input
         type="text"
-        
+        value={props.title}
         placeholder="Add a title "
         className="input outline-none"
         onChange={(e) => setTitle(e.target.value)}
+        disabled
       />
       <p style={styles.content}>{props.content}</p>
       <button style={styles.deleteButton} onClick={()=> RemoveNote()}>
@@ -31,6 +33,7 @@ function Note(props) {
         <Link to={`/${props.index}`}>Edit</Link>
       </button>
     </div>
+    
   );
 }
 

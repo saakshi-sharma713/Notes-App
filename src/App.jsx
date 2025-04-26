@@ -11,12 +11,12 @@ import Pages from "./Component/Pages"
 function App() {
   const [count, setCount] = useState(0)
    const {notes} =useContext(NotesContext);
-  
+  console.log(notes);
   return (
     <>
     <Routes>
-      <Route path="/" element={<Container/>}></Route>
-      <Route path="/:id" element ={<Pages/>}></Route>
+      <Route path="/" element={<Container />}></Route>
+      <Route path="/:id" element ={<Pages />}></Route>
     </Routes>
     </>
   )
