@@ -1,0 +1,16 @@
+@import "tailwindcss";
+.input:active{
+ border:none;
+}
+textarea{
+    height:100vh;
+    border:"none";
+    outline:"none"
+  
+    
+}
+
+textarea:focus {
+    outline: none; /* Removes the focus outline */
+    border: none; /* Removes the border */
+}
