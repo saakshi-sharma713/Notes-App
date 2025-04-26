@@ -18,7 +18,7 @@ function Note(props) {
     <div style={styles.note}>
       <input
         type="text"
-        value={props.title}
+        
         placeholder="Add a title"
         className="input outline-none"
         onChange={(e) => setTitle(e.target.value)}
