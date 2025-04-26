@@ -14,3 +14,8 @@ A simple Notes App built using React and Context API to create, update, and dele
 - CSS (or Tailwind if you used)
 
 
+
+## How to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/saakshi-sharma713/Notes-App.git
