@@ -14,3 +14,6 @@ textarea:focus {
     outline: none; /* Removes the focus outline */
     border: none; /* Removes the border */
 }
+body{
+    background:pink;
+}
