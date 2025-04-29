@@ -39,7 +39,7 @@ console.log();
       </button><br></br>
      
     </div>
-    <h2 className=" text-gray-500 text-1xl">{props.status} {`${day} ${monthAbbr}, ${year}`}</h2>
+    <h2 className=" text-gray-500 text-sm mt-2">{props.status} {`${day} ${monthAbbr}, ${year}`}</h2>
     </div>
     
     
@@ -87,6 +87,7 @@ const styles = {
   h2:{
     fontWeight:"200",
     color:"grey",
+    marginTop:"3px",
   },
 };
 
