@@ -6,7 +6,7 @@ function input(){
     const {addNote} = useContext(NotesContext);
     function addTask(e){
         e.preventDefault();
-        if(note !=""){
+        if(note!=""){
         addNote({title:"Add a title",content:note,id:Date.now(),status:"Created on"});
         setnote(" ");
     }
