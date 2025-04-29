@@ -19,7 +19,7 @@ function input(){
             <input
                value={note}
                 type="text"
-                placeholder="Write Todo..."
+                placeholder="Write a note..."
                 className="w-full border border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5"
                 onChange={(e)=>{
                    setnote(e.target.value)
