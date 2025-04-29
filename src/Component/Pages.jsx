@@ -19,7 +19,6 @@ return <>
             {/* Input field with state binding and onChange handler */}
             <div className="flex flex-col w-1/2">
             <input 
-            placeholder="Add a title "
             value={heading=== "Add a title" ? "": heading}
             onChange={(e)=>{
                 setheading(e.target.value)

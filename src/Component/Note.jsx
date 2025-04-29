@@ -21,7 +21,7 @@ const monthAbbr = today.toLocaleString('en-US', { month: 'short' });
 const year = today.getFullYear();
 console.log();
 
-  return <><div><div  style={styles.note}>
+  return <><div><div  className="Container" style={styles.note}>
       <input
         type="text"
         value={props.title}
@@ -30,7 +30,7 @@ console.log();
         onChange={(e) => setTitle(e.target.value)}
         disabled
       />
-      <p style={styles.content}>{props.content}</p>
+      <p style={styles.content}>{props.content.length > 100 ? props.content.substring(0, 80) + "..." : props.content}</p>
       <button style={styles.deleteButton} onClick={()=> RemoveNote()}>
         Delete Note
       </button>
@@ -57,6 +57,8 @@ const styles = {
     width: "300px",
     height: "220px",
     marginBottom:"2px",
+    overflowX:"hidden",
+    
     
   },
   content: {
@@ -89,9 +91,10 @@ const styles = {
     color:"grey",
     marginTop:"3px",
   },
-  input:{
-    overflow:"hidden",
+  Container :{
+    
   }
+
 };
 
 export default Note;

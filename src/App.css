@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+input::placeholder {
+  color: gray;  /* Change to any color */
+  opacity: 1;    /* Ensure full visibility */
+}
+
