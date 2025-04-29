@@ -14,6 +14,7 @@ function Container(){
       title={val.title} 
       id={val.id} 
       index={idx} 
+      status={val.status}
       content={typeof val.content === "object" ? JSON.stringify(val.content) : val.content} 
     />
     

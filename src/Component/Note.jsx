@@ -15,7 +15,13 @@ function Note(props) {
   }
   
 
-  return <><div style={styles.note}>
+  const today = new Date();
+const day = today.getDate();
+const monthAbbr = today.toLocaleString('en-US', { month: 'short' });
+const year = today.getFullYear();
+console.log();
+
+  return <><div><div  style={styles.note}>
       <input
         type="text"
         value={props.title}
@@ -31,7 +37,9 @@ function Note(props) {
       <button style={styles.edit}>
         <Link to={`/${props.index}`}>Edit</Link>
       </button><br></br>
-      <h2 className="font-bold from-neutral-600">{props.status}</h2>
+     
+    </div>
+    <h2 className=" text-gray-500 text-1xl">{props.status} {`${day} ${monthAbbr}, ${year}`}</h2>
     </div>
     
     
@@ -48,6 +56,8 @@ const styles = {
     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
     width: "300px",
     height: "220px",
+    marginBottom:"2px",
+    
   },
   content: {
     margin: "8px 0",
@@ -73,6 +83,10 @@ const styles = {
     cursor: "pointer",
     marginBottom: "5px",
     marginLeft: "5px",
+  },
+  h2:{
+    fontWeight:"200",
+    color:"grey",
   },
 };
 

@@ -10,7 +10,7 @@ function Notes({children}) {
       content: "msg",
       id: Date.now(),
       status: "Created on",
-    },
+    }
   ];
 
   const [notes, setNotes] = useState(()=>{
