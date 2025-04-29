@@ -16,6 +16,7 @@ function Container(){
       index={idx} 
       content={typeof val.content === "object" ? JSON.stringify(val.content) : val.content} 
     />
+    
   );
 })}
       </div>

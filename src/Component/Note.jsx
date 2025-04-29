@@ -15,8 +15,7 @@ function Note(props) {
   }
   
 
-  return (
-    <div style={styles.note}>
+  return <><div style={styles.note}>
       <input
         type="text"
         value={props.title}
@@ -31,10 +30,12 @@ function Note(props) {
       </button>
       <button style={styles.edit}>
         <Link to={`/${props.index}`}>Edit</Link>
-      </button>
+      </button><br></br>
+      <h2 className="font-bold from-neutral-600">{props.status}</h2>
     </div>
     
-  );
+    
+  </>
 }
 
 const styles = {

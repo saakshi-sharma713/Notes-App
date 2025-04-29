@@ -9,6 +9,7 @@ function Notes({children}) {
       title: "Add a Title",
       content: "msg",
       id: Date.now(),
+      status: "Created on",
     },
   ];
 
@@ -23,7 +24,7 @@ function Notes({children}) {
 
   function UpdateNote(id, note,head) {
     setNotes((prev)=>
-      prev.map((val) => val.id === id ? {...val,title:head,content:note}: val ))
+      prev.map((val) => val.id === id ? {...val,title:head,content:note,status:"Edited on"}: val ))
     
   }
 
