@@ -11,7 +11,7 @@ A simple Notes App built using React and Context API to create, update, and dele
 ## Tech Stack
 - React JS
 - Context API
-- CSS (or Tailwind if you used)
+- Tailwind CSS
 
 
 
