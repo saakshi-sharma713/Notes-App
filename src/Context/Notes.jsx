@@ -6,7 +6,7 @@ export const NotesContext = createContext(null);
 function Notes({children}) {
   const initialNotes = [
     {
-      title: "Add a Title",
+      title: " ",
       content: "msg",
       id: Date.now(),
       status: "Created on",

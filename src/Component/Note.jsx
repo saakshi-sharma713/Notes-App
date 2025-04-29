@@ -30,7 +30,7 @@ console.log();
         onChange={(e) => setTitle(e.target.value)}
         disabled
       />
-      <p style={styles.content}>{props.content.length > 100 ? props.content.substring(0, 80) + "..." : props.content}</p>
+      <p style={styles.content}>{props.content.length > 80 ? props.content.substring(0, 80) + "..." : props.content}</p>
       <button style={styles.deleteButton} onClick={()=> RemoveNote()}>
         Delete Note
       </button>

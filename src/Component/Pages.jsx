@@ -9,7 +9,7 @@ const title = notes[id].title;
 const note = notes[id];
 console.log(note)
 const [val, setVal] = useState(message); // State for the input value
-const[heading,setheading]=useState(title);
+const[heading,setheading]=useState("");
 function Update(){
       UpdateNote(note.id,val,heading)
 }
@@ -17,9 +17,10 @@ function Update(){
 return <>
         <div className="flex justify-around items-start">
             {/* Input field with state binding and onChange handler */}
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col w-3/4">
             <input 
-            value={heading=== "Add a title" ? "": heading}
+            placeholder="Add a title"
+            value={heading}
             onChange={(e)=>{
                 setheading(e.target.value)
             }}
