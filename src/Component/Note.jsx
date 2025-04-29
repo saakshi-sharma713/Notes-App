@@ -21,7 +21,7 @@ const monthAbbr = today.toLocaleString('en-US', { month: 'short' });
 const year = today.getFullYear();
 console.log();
 
-  return <><div><div  className="Container" style={styles.note}>
+  return <><div><div  style={styles.note}>
       <input
         type="text"
         value={props.title}
@@ -30,7 +30,7 @@ console.log();
         onChange={(e) => setTitle(e.target.value)}
         disabled
       />
-      <p style={styles.content}>{props.content.length > 80 ? props.content.substring(0, 80) + "..." : props.content}</p>
+     <div className=" flex flex-wrap flex-col h-35 break-all"> <p style={styles.content} className="text-sm  p-2 w-full h-full">{ props.content.length > 150 ? props.content.substring(0,155) : props.content }</p></div>
       <button style={styles.deleteButton} onClick={()=> RemoveNote()}>
         Delete Note
       </button>
@@ -55,17 +55,19 @@ const styles = {
     backgroundColor: "#f9f9f9",
     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
     width: "300px",
-    height: "220px",
+    height: "250px",
     marginBottom:"2px",
     overflowX:"hidden",
     
     
   },
   content: {
-    margin: "8px 0",
+    margin: "8px 2px",
     fontSize: "16px",
     color: "#333",
-    height: "100px",
+    display:"flex",
+    flexWrap:"wrap",
+
   },
   deleteButton: {
     backgroundColor: "#ff4d4d",
@@ -75,6 +77,7 @@ const styles = {
     borderRadius: "4px",
     cursor: "pointer",
     marginBottom: "5px",
+    marginTop:"15px",
   },
   edit: {
     backgroundColor: "#ff4d4d",

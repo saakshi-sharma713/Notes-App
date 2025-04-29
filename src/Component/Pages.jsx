@@ -15,25 +15,18 @@ function Update(){
 }
 
 return <>
-        <div className="flex justify-around items-start">
+        <div className="flex flex-col">
             {/* Input field with state binding and onChange handler */}
-            <div className="flex flex-col w-3/4">
+            <div className="flex  justify-around items-start ">
             <input 
             placeholder="Add a title"
             value={heading}
             onChange={(e)=>{
                 setheading(e.target.value)
             }}
-            className=" w-full border border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5 input h-15"
+            className=" w-3/4 border border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5 input h-15"
             ></input>
-            <textarea
-                className="text-4xl w-full h-96 mt-5"
-                value={val}
-                onChange={(e) => setVal(e.target.value)} // Updates state on input change
-            />
-       
-            </div>
-            <button onClick={()=>{
+           <button onClick={()=>{
                 Update()
             }}>
                 <Link to="/" aria-label="Go back to home">
@@ -52,6 +45,14 @@ return <>
                     </svg>
                 </Link>
             </button>
+       
+            </div>
+            <textarea
+            
+                className="text-4xl w-full h-96 mt-5 px-15"
+                value={val}
+                onChange={(e) => setVal(e.target.value)} // Updates state on input change
+            />
             
         </div>
     </>
