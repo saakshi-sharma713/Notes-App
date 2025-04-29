@@ -89,6 +89,9 @@ const styles = {
     color:"grey",
     marginTop:"3px",
   },
+  input:{
+    overflow:"hidden",
+  }
 };
 
 export default Note;
