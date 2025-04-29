@@ -2,12 +2,14 @@ import { useState,useContext } from "react";
 import { NotesContext } from "../Context/Notes";
 
 function input(){
-    const[note,setnote]=useState(" ");
+    const[note,setnote]=useState("");
     const {addNote} = useContext(NotesContext);
     function addTask(e){
         e.preventDefault();
+        if(note !=""){
         addNote({title:"Add a title",content:note,id:Date.now(),status:"Created on"});
         setnote(" ");
+    }
     }
 
     return <>
