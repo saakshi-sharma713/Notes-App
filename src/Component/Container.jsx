@@ -19,7 +19,7 @@ function Container(){
       />
     ))
   ) : (
-    <p className="mt-50 text-5xl text-gray-400 font-light">Add notes +</p>
+    <p className="mt-50 text-2xl text-gray-400 font-light">Add notes +</p>
   )}
 </div>
           </>
