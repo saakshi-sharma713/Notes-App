@@ -3,7 +3,6 @@
 A simple and intuitive note-taking application built with React, leveraging the Context API for state management, to allow users to easily create, update, and delete notes.
 
 
-## ✨ Features
 
 *   **Create Notes:** Easily add new notes with a title and content.
 *   **Update Notes:** Edit existing notes to keep your information current.
