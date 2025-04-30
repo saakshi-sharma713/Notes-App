@@ -30,7 +30,7 @@ console.log();
         onChange={(e) => setTitle(e.target.value)}
         disabled
       />
-     <div className=" flex flex-wrap flex-col h-35 break-all"> <p style={styles.content} className="text-sm  p-2 w-full h-full">{ props.content.length > 150 ? props.content.substring(0,155) : props.content }</p></div>
+     <div className=" flex flex-wrap flex-col h-45 break-all"> <p style={styles.content} className="text-sm  p-2 w-full h-full">{ props.content.length > 150 ? props.content.substring(0,155) : props.content }</p></div>
       <button style={styles.deleteButton} onClick={()=> RemoveNote()}>
         Delete Note
       </button>
@@ -49,13 +49,13 @@ console.log();
 const styles = {
   note: {
     border: "1px solid #ccc",
-    borderRadius: "8px",
+    borderRadius: "40px",
     padding: "16px",
     margin: "25px",
     backgroundColor: "#f9f9f9",
     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-    width: "300px",
-    height: "250px",
+    width: "280px",
+    height: "300px",
     marginBottom:"2px",
     overflowX:"hidden",
     
