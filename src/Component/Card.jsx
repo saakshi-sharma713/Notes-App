@@ -32,7 +32,7 @@ function Card(){
              <div class="form-group" className="w-full   flex flex-col items-start ">
                <label for="noteContent" class="form-label" className=" text-gray-400 font-bold"> Content </label>
                <textarea
-               className="  w-full border border-gray-400 rounded-md p-2 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+               className="  w-full h-40 border border-gray-400 rounded-md p-2 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
                value={contentdata}
                placeholder="enter content"
                onChange={(e)=>{
