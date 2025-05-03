@@ -2,7 +2,7 @@
 .input:active{
  border:none;
 }
-textarea{
+.area{
     height:100vh;
     border:"none";
     outline:"none"
@@ -10,7 +10,40 @@ textarea{
     
 }
 
-textarea:focus {
+.area:focus {
     outline: none; /* Removes the focus outline */
     border: none; /* Removes the border */
+}
+
+i{
+    font-size: 4rem;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); /* Applies blur to the background */
+    background-color: rgba(0, 0, 0, 0.2); /* Slight dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+  }
+  
+  .modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+  }
+
+.abcc{
+    border:2px solid black !important;
+    
 }

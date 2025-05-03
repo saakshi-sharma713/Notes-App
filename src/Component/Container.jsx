@@ -18,9 +18,14 @@ function Container(){
         content={typeof val.content === "object" ? JSON.stringify(val.content) : val.content} 
       />
     ))
-  ) : (
-    <p className="mt-50 text-2xl text-gray-400 font-light">Add notes +</p>
-  )}
+  ) : <>
+    
+  <div className="flex flex-col  mt-50">
+  <i class="fas fa-notes-medical"></i>
+    <p className=" text-2xl text-gray-400 font-bold ">No Notes </p><br></br>
+    <p className=" text-2xl text-gray-400 font-light mt-0">Add your first note by clicking the "Add" button </p>
+</div>
+  </>}
 </div>
           </>
 }

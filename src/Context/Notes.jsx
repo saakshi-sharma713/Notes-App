@@ -6,13 +6,13 @@ export const NotesContext = createContext(null);
 function Notes({children}) {
   const initialNotes = [
     {
-      title: " ",
+      title: "Add a title",
       content: "msg",
       id: Date.now(),
       status: "Created on",
     }
   ];
-
+ const [status,setstatus]=useState(false);
   const [notes, setNotes] = useState(()=>{
     const result =localStorage.getItem('notes');
     return result ? JSON.parse(result) : [];
@@ -37,7 +37,7 @@ function Notes({children}) {
   },[notes])
 
   return (
-    <NotesContext.Provider value={{ notes, addNote, DeleteNote, UpdateNote }}>
+    <NotesContext.Provider value={{ notes, addNote, DeleteNote, UpdateNote,status ,setstatus}}>
     
       {children}
     </NotesContext.Provider>

@@ -49,7 +49,7 @@ return <>
             </div>
             <textarea
             
-                className="text-4xl w-full h-96 mt-5 p-3"
+                className="area text-4xl w-full h-96 mt-5 p-3"
                 value={val}
                 onChange={(e) => setVal(e.target.value)} // Updates state on input change
             />

@@ -1,16 +1,17 @@
 import { useState,useContext } from "react";
 import { NotesContext } from "../Context/Notes";
-
+import Card from "../Component/Card"
 function input(){
     const[note,setnote]=useState("");
-    const {addNote} = useContext(NotesContext);
+    const {addNote,status,setstatus} = useContext(NotesContext);
+    const[val,setval]=useState(false);
     function addTask(e){
         e.preventDefault();
-        if(note!=""){
-        addNote({title:"Add a title",content:note,id:Date.now(),status:"Created on"});
         setnote(" ");
-    }
-    }
+        setstatus(true);
+    
+      }
+      
 
     return <>
      <form  className="flex" onSubmit={(e)=>{
@@ -25,6 +26,7 @@ function input(){
                    setnote(e.target.value)
                 }}
             />
+            
             <button type="submit" className="rounded-r-lg px-3 py-1 bg-green-600 text-white shrink-0"
             >
                 Add

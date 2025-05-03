@@ -8,16 +8,20 @@ import { NotesContext } from './Context/Notes'
 import { Route,Routes } from 'react-router-dom'
 import Container from './Component/Container'
 import Pages from "./Component/Pages"
+import Card from "./Component/Card"
 function App() {
   const [count, setCount] = useState(0)
-   const {notes} =useContext(NotesContext);
+   const {notes,status,setstatus} =useContext(NotesContext);
   console.log(notes);
+  console.log(status);
   return (
     <>
     <Routes>
       <Route path="/" element={<Container />}></Route>
       <Route path="/:id" element ={<Pages />}></Route>
     </Routes>
+    
+    { status ? <Card/>: ""}
     </>
   )
 }
