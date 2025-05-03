@@ -15,7 +15,7 @@
     border: none; /* Removes the border */
 }
 
-i{
+.abd i{
     font-size: 4rem;
     color: #ddd;
     margin-bottom: 20px;
@@ -44,6 +44,6 @@ i{
   }
 
 .abcc{
-    border:2px solid black !important;
+    border: 1px solid black !important
     
 }

@@ -20,7 +20,7 @@ function Container(){
     ))
   ) : <>
     
-  <div className="flex flex-col  mt-50">
+  <div className="flex flex-col  mt-50 abd">
   <i class="fas fa-notes-medical"></i>
     <p className=" text-2xl text-gray-400 font-bold ">No Notes </p><br></br>
     <p className=" text-2xl text-gray-400 font-light mt-0">Add your first note by clicking the "Add" button </p>

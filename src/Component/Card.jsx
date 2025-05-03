@@ -21,7 +21,7 @@ function Card(){
     <div className="flex justify-between w-full"><h2 className=" text-gray-400 font-bold text-2xl self-start">Add Notes</h2> 
     <button onClick={()=>{
       setstatus(false);
-    }}>close</button></div>
+    }} id="one"> <i class="fas fa-times" ></i></button></div>
              <div class="form-group" className="w-full  items-start flex flex-col">
                <label for="noteTitle" class="form-label" className=" text-gray-400 font-bold">Title</label>
                <input type="text" id="noteTitle" className="border-1 w-full mt-4 h-10 rounded"
@@ -32,12 +32,12 @@ function Card(){
              <div class="form-group" className="w-full   flex flex-col items-start ">
                <label for="noteContent" class="form-label" className=" text-gray-400 font-bold"> Content </label>
                <textarea
-               className="abcc  !h-40 !border border-gray-300 p-2 !rounded-md !w-full !focus:outline-none focus:ring-2 focus:ring-blue-400 !resize:none"
-
+               className="  w-full border border-gray-400 rounded-md p-2 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
                value={contentdata}
+               placeholder="enter content"
                onChange={(e)=>{
                 setcontentdata(e.target.value)}}
-                 class="form-input form-textarea"
+                
                  required
                ></textarea>
              </div>
