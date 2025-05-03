@@ -24,7 +24,7 @@ function Card(){
     }} id="one"> <i class="fas fa-times" ></i></button></div>
              <div class="form-group" className="w-full  items-start flex flex-col">
                <label for="noteTitle" class="form-label" className=" text-gray-400 font-bold">Title</label>
-               <input type="text" id="noteTitle" className="border-1 w-full mt-4 h-10 rounded"
+               <input type="text" id="noteTitle" className="border-1 w-full mt-4 h-10 rounded p-4"
                value={heading} onChange={(e)=>{
                 setheading(e.target.value);
                }} required /> 
