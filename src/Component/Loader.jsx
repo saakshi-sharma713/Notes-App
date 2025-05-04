@@ -9,8 +9,11 @@ const Loader = () => {
       height: "100vh",
       fontSize: "20px",
       fontWeight: "bold",
-    }}>
-      🔄 Loading...
+      borderTop:"10px",
+      borderRadius:"50%",
+
+    }} className="load">
+    
     </div>
   );
 };
