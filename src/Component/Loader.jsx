@@ -11,7 +11,7 @@ const Loader = () => {
       fontWeight: "bold",
       borderTop:"10px",
       borderRadius:"50%",
-
+      borderColor:"blue",
     }} className="load">
     
     </div>
