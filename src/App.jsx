@@ -7,7 +7,7 @@ import Input from "./Component/Input";
 import { NotesContext } from "./Context/Notes";
 import { Route, Routes } from "react-router-dom";
 import Card from "./Component/Card";
-
+import Loader from "./Component/Loader";
 // Correct way to use lazy()
 const Container = lazy(() => import("./Component/Container"));
 const Pages = lazy(() => import("./Component/Pages"));
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <Suspense fallback={<div>Loading ...</div>}>
+      <Suspense fallback={<div><Loader/></div>}>
         <Routes>
           <Route path="/" element={<Container />} />
           <Route path="/:id" element={<Pages />} />
